@@ -13,7 +13,12 @@ docker run -d --name http-proxy -p <PROXY_PORT>:80 -e PROXY_USER=<PROXY_USER> -e
 - Change **PROXY_PORT** for custom proxy port
 
 ## Test running service
+### with auth
 ```bash
-curl --proxy <DOCKER_MACHINE_IP>:<PROXY_PORT> https://ya.ru 
+curl --proxy http://<PROXY_USER>:<PROXY_PASS>@<DOCKER_MACHINE_IP>:<PROXY_PORT> https://ya.ru 
+```
+### without auth
+```bash
+curl --proxy http://<DOCKER_MACHINE_IP>:<PROXY_PORT> https://ya.ru 
 ```
 result must show docker host ip (for bridged network)
