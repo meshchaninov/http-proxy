@@ -14,4 +14,4 @@ docker run -d --name http-proxy -p <PROXY_PORT>:80 -e PROXY_USER=<PROXY_USER> -e
 ```bash
 curl --proxy <DOCKER_MACHINE_IP>:<PROXY_PORT> https://ya.ru 
 ```
-result must show docker host ip (for bridged network)# http-proxy
+result must show docker host ip (for bridged network)
