@@ -1,4 +1,6 @@
-# go-http-proxy
+# http-proxy
+
+[In dockerhub](https://hub.docker.com/repository/docker/meshchaninov/http-proxy/)
 
 Simple http server using [goproxy](https://github.com/elazarl/goproxy) with or without auth.
 
